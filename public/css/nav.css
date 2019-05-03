@@ -1,0 +1,151 @@
+/* 
+Color Scheme
+Onyx: #31393C
+Blue (Crayola): #2176FF
+Azure: #33A1FD
+Sunglow: #FDCA40
+Carrot Orange: #F79824
+*/
+/*
+Global stylings
+*/
+header {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    background-color: #2176FF;
+    margin-top: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    float: left;
+    margin-left: 10px;
+    padding: 35px 0;
+    color: white;
+}
+
+nav {
+    float: right;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+}
+header li {
+    float: left;
+    display: block;
+    padding: 35px 30px 0 30px;
+    position: static
+}
+
+nav li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav li:last-child {
+    display: none;
+    font-size: 40px;
+    padding: 0 15px;
+}
+
+nav li:first-child {
+    margin-top: -1px;
+}
+
+nav input[type=text] {
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+}
+
+nav button {
+  float: right;
+    margin-left: 0;
+  padding: 6px 10px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+    color: #31393C;
+  cursor: pointer;
+  display: inline-block;
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .content-wrap {max-width: none;}
+    nav li:not(:last-child):not(:first-child) {display: none;}
+    nav li:last-child {
+        display: inherit;
+        position: fixed;
+        right: 10px;
+        top: 20px;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    nav li:first-child {
+        margin-right: 100px;
+        position: fixed;
+        top:0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  nav.responsive {
+      position: relative; 
+      float: none; 
+      border-top: 1px solid white; 
+    }
+  nav.responsive li:last-child {
+      margin: 0;
+    position: fixed;
+    right: 10px;
+    top: 20px;
+      border-radius: 5px;
+      background-color: #FDCA40;
+      padding: 0px 15px 5px;
+  }
+  nav.responsive li:not(:last-child):not(:first-child) {
+    float: none;
+    display: block;
+      padding: 20px;
+      text-align:center;
+  }
+
+    nav.responsive ul {
+        display: block;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .logo.responsive {
+        display: block;
+        float:none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav li:first-child {
+        display: none;
+    }
+    nav.responsive li:first-child {
+        margin-right: 0;
+        position: static;
+        float: none;
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+    nav.responsive button {
+        float: none;
+    }
+}
+

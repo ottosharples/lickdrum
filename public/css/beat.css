@@ -1,0 +1,88 @@
+/* 
+Color Scheme
+Onyx: #31393C
+Blue (Crayola): #2176FF
+Azure: #33A1FD
+Sunglow: #FDCA40
+Carrot Orange: #F79824
+*/
+/*
+Global stylings
+*/
+
+#sheets {
+    width: 100%;
+    margin: 0 0 70px;
+}
+
+h1 {
+    display: inline-block;
+    padding-right:30px;
+}
+
+.content i {
+    display:inline-block;
+    float: right;
+    color: #31393C;
+    font-size: 30px;
+    margin-top: 38px;
+}
+
+iframe {
+    float:left;
+    width: 55%;
+    margin-bottom: 50px;
+}
+
+#tags {
+    display:inline-block;
+    width: 45%;
+}
+
+#tags ul {
+    list-style: none;
+    margin: 0;
+}
+
+#tags ul li {
+    padding: 10px;
+    background-color: #FDCA40;
+    display: inline-block;
+    margin: 5px;
+    color: black;
+}
+
+#tags ul li:hover {
+    background-color: #e5b739;
+}
+
+#tags h3 {
+    display: inline-block;
+    padding-right: 5px;
+    margin: 0;
+}
+
+#gear h3 {
+    clear: left;
+    padding-top: 30px
+}
+
+#gear ul li a {
+    text-decoration:none;
+}
+
+#gear {
+    margin-bottom: 70px
+}
+
+@media screen and (max-width: 1024px) {
+    iframe {
+        width: 100%;
+    }
+    #tags {
+        width: 100%;
+    }
+    #tags h3 {
+        margin-left: 
+    }
+}
